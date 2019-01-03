@@ -19,7 +19,7 @@ class CreateArtists < ActiveRecord::Migration
 
   def down
   end
-  
+
   def change
     create_table :artists do |t|
       t.string :name
@@ -28,5 +28,5 @@ class CreateArtists < ActiveRecord::Migration
       t.string :hometown
     end
   end
-  
+
 end
