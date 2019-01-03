@@ -16,7 +16,10 @@ class CreateArtists < ActiveRecord::Migration
     SQL
     ActiveRecord::Base.connection.execute(sql)
   end
-
+  def change
+    create_table :artists do |t|
+    end
+  end
   def down
   end
 end
