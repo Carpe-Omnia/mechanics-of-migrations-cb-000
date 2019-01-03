@@ -14,7 +14,7 @@ class CreateArtists < ActiveRecord::Migration
       hometown TEXT
       )
     SQL
-  ActiveRecord::Base.connection.execute(sql)
+    ActiveRecord::Base.connection.execute(sql)
   end
 
   def down
