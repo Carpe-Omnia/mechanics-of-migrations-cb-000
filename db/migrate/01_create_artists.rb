@@ -17,6 +17,9 @@ class CreateArtists < ActiveRecord::Migration
     ActiveRecord::Base.connection.execute(sql)
   end
 
+  def down
+  end
+  
   def change
     create_table :artists do |t|
       t.string :name
@@ -25,8 +28,5 @@ class CreateArtists < ActiveRecord::Migration
       t.string :hometown
     end
   end
-
-  def down
-  end
-
+  
 end
